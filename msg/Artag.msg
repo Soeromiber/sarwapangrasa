@@ -1,0 +1,6 @@
+int64 id
+geometry_msgs/Point position
+geometry_msgs/Vector3 rotation
+geometry_msgs/Quaternion orientation
+bool isCentered
+bool isPerpendicular
