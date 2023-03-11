@@ -18,6 +18,7 @@ namespace sarwapangrasa
         class ArTag
         {
             public:
+                ArTag();
                 ArTag(cv::Mat cameraMatrix, cv::Mat distCoeffs, double markerSize, int dictionaryId = 10, double centerThreshold = 10, double perpendicularThreshold = 0.1);
 
                 Artags detect(const sensor_msgs::Image::ConstPtr& img);
@@ -28,6 +29,7 @@ namespace sarwapangrasa
                 double markerSize = 0.05;
                 double centerThreshold = 10;
                 double perpendicularThreshold = 0.1;
+                std::vector<double> markerSizes;
         };
     }
 }

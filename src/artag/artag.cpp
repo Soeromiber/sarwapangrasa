@@ -4,10 +4,14 @@ namespace sarwapangrasa
 {
     namespace artag
     {
+        ArTag::ArTag(){}; // Default constructor
+
         ArTag::ArTag(cv::Mat cameraMatrix, cv::Mat distCoeffs, double markerSize, int dictionaryId, double centerThreshold, double perpendicularThreshold)
         {
             this->cameraMatrix = cameraMatrix;
             this->distCoeffs = distCoeffs;
+            // std::vector<double>& mSize
+            // this->markerSizes = *mSize;
             this->markerSize = markerSize;
             this->dictionary = cv::aruco::getPredefinedDictionary(dictionaryId);
             this->detectorParams = cv::aruco::DetectorParameters::create();

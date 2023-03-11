@@ -10,6 +10,6 @@
   </node>
   <node name="artag_node" pkg="sarwapangrasa" type="artag_node" output="screen" >
     <rosparam file="$(find sarwapangrasa)/config/camera.yaml" />
-    <param name="dictionary" type="int" value="10" />
+    <rosparam file="$(find sarwapangrasa)/config/artag.yaml" />
   </node>
 </launch>

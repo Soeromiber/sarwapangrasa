@@ -1,4 +1,4 @@
-image_topic: /usb_cam/image_raw
+image_topic: '/usb_cam/image_raw'
 camera_matrix:
   rows: 3
   cols: 3
